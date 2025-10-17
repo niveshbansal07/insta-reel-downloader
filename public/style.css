@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #E1306C;
+}
+
+.logo svg {
+  filter: drop-shadow(0px 0px 4px rgba(225,48,108,0.3));
+}
+
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.main p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-box input {
+  width: 60%;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: 2px solid #E1306C;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(225,48,108,0.2);
+}
+
+.input-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #E1306C, #F77737);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 10px rgba(225,48,108,0.3);
+}
+
+.input-box button:hover {
+  transform: translateY(-2px);
+}
+
+/* How to section */
+.how-to {
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 700px;
+}
+
+.how-to h2 {
+  color: #E1306C;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.how-to ol {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .input-box input {
+    width: 80%;
+  }
+}
